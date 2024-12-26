@@ -1,8 +1,11 @@
-import './App.css'
+//components
 import { Contact } from './components/Contact';
 import { Major } from './components/Major'
-import { BrowserRouter, Routes, Route } from "react-router";
 import { Projects } from './components/Projects';
+//librarys
+import { BrowserRouter, Routes, Route } from "react-router";
+//style
+import './App.css'
 
 function App() {
   return (
