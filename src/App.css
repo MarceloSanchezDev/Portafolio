@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*
+  border: 1px solid red;
+  */  
+
+}
+body{
+  min-height: 100%;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/*Escritorio*/
+@media screen and (min-width: 1024px) and (min-height:720px){
+.elementDer{
+  opacity: 0;
+  transform: translateX(10px) translateY(20px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.elementIzq{
+  opacity: 0;
+  transform: translateX(-10px) translateY(20px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.seccion{
+  height: 100vh;
+  font-family: VT323;
+}
+.elementDer.visibleDer {
+  opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0);
+}
+.elementIzq.visibleIzq {
+  opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0);
+}
+.contenedor{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorFoto{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  
+}
+.contenedorPresentacion{
+  display: flex  ;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  
+}
+.titulo{
+  margin:1%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 45%;
+  overflow: hidden; 
+  white-space: nowrap;
+  animation: typing 4s steps(30);
+}
+.titulo::after{
+content: "|";
+animation: aparecer 1s infinite alternate;
+}
+.subTitutlo{
+  margin:1%;
+  font-family: VT323;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 45%;
+    animation: aparecer 2s steps(30);
+}
+.parrafoPresentacion{
+    margin: 1%;
+     font-family: VT323;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    animation: aparecer 2s steps(30);
+}
+.fotoCV{
+    margin-left: 50px;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    animation: aparecer 2s steps(30);
+    animation: movimiento 1s;
+}
+.tituloSeconSeccion{
+  margin:1%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.projectos{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.projecto{
+  margin: 1%;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 14px 5px 0px black;
+}
+.tituloProjecto{
+  height: 10%;
+  display: flex;
+        border-bottom: 1px solid black;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+}
+.tituloProjecto > h1{
+  margin: 1%;
+}
+.Info{
+  padding: 1%;
+  border-top: 1px solid black;
+}
+.imagenProjecto{
+  width: 100%;
+  overflow: hidden;
+}
+.imagenProjecto > img {
+  width: 100%;
+  display: block; /* Evita el pequeño espacio debajo de la imagen */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+.imagenProjecto > img:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05); /* Agranda un poco la imagen al hacer hover */
+}
+.lista  > li{
+  list-style: none;
+  margin: 1%;
+}
+.botonProjecto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 1%;
+}
+
+.botonProjecto:hover {
+  background-color: #45a049;
+}
+}
+/*
+@media screen and (min-width: 1024px) and (min-height:720px) {
+  body{
+    background: linear-gradient(to bottom, #050806, #0f9b0f);
+    width: 100vw;
+    max-width: 100%;
+    margin: auto;
+  }
+  .contenedor{
+    color: #050806;
+    font-family: Poppins;
+  }
+.contenedorMajor{
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  display: flex
+;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .contenedroPresentacion{
+    height: 50%;
+    max-height: 60%;
+    width: 60%;
+    margin: auto;
+    display: flex
+;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: movimiento 1s;
+    transition: ease;
+  }
+  .contenedorNavegador {
+    color: white;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    border-radius: 50px;
+    background: rgba(42, 118, 114, 0.17);
+    display: flex
+  ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+  }
+.contenedroPresentacionFoto{
+  width: 20%;
+  height: 100%;
+  display: flex
+;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.contenedorPresentacionEscrita{
+  min-width: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fila1{
+        width: 100%;
+        height: 60%;
+        padding: 10px;
+        display: flex ;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+}
+.fila2{
+    width: 100%;
+    padding: 10px;
+    display: flex    ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.elementGit{
+  background-image: url('./assets/github.jpg') ;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.elementLinkedin{
+  background-image: url('./assets/linkedin.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+.elementSobreMi{
+  background-image: url('./assets/sobremi.jpg') ;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.elementProyectos{
+  background-image: url('./assets/proyectos.jpg') ;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.elementContacto{
+  background-image: url('./assets/contacto.jpg') ;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.element{
+    width: 100%;
+    max-width: 261px;
+    height: 261px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.50);
+}
+.element:hover,.element2:hover{
+  animation: crecer 0.1s forwards;
+  cursor: pointer;
+}
+.element2{
+  width: 100%;
+  max-width: 40%;
+  height: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.50);
+}
+
+
+.coding{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    opacity: 50%;
+}
+.footer {
+  margin-top: 10px;
+  position: relative; 
+    bottom: 0;
+    width: 100%;
+    height: 10dvh; 
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -10px;
+    background: #050806;
+  }
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+}
+*/
+/*Telefono
+@media screen and (max-width: 767px){
+  body{
+    background-color: black;
+    min-width: 100%;
+  }
+}
+*/
+/*----------------------------------------------------------- Animacion ----------------------------------------------------------- */
+@keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 40%;
+    }
+  }
+
+@keyframes crecer {
+  from{
+      transform: scale(1);
+    }
+  to{
+    transform: scale(1.3);
+    box-shadow: inset 0px -20px 20px 20px black;
+  }
+}
+
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes movimiento {
+  0%   { left:-500px; }
+  100% { left:0px; }
+}
+
+@keyframes back {
+0%   { background-color: rgb(0, 0, 0);
+color: black; ;}
+50%  { background-color: rgb(133, 133, 133);
+color: black; }
+100% { background-color: rgb(255, 255, 255);
+color: black;}
+}

@@ -1,17 +1,17 @@
+import foto from '../assets/fotoCV1.svg'
+
 export function Major() {
     return (
-        <div className="container my-4">
-          <h2 className="mb-4">Major Component</h2>
-          <div className="row">
-            {/* Generar 12 celdas en 4 filas y 3 columnas */}
-            {Array.from({ length: 12 }).map((_, index) => (
-              <div className="col-md-4 mb-3" key={index}>
-                <div className="p-3 border bg-light text-center">
-                  <strong>Item {index + 1}</strong>
+        <div className="seccion">
+            <div className='contenedor'>
+                <div className='contenedorFoto elementIzq' >
+                    <img className='fotoCV'  src={foto} alt="Foto de perfil" />
                 </div>
-              </div>
-            ))}
-          </div>
+                <div className='contenedorPresentacion '>
+                    <h1 className="titulo ">Marcelo Sanchez</h1>
+                    <h2 className='subTitutlo elementDer'>Desarrollador Full-Stack</h2>
+                    <p className='parrafoPresentacion elementDer'>Como desarrollador full stack, tengo la capacidad de construir aplicaciones completas, desde interfaces modernas y atractivas hasta sistemas backend robustos y escalables. Mi enfoque integral asegura soluciones eficientes, adaptadas a tus necesidades y listas para crecer junto con tu negocio.</p>                </div>
+            </div>
         </div>
       );
 }
