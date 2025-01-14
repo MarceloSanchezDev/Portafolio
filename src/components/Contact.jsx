@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import contactoEmail from '../assets/contactoEmail.jpg'
 export function Contact() {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -35,43 +35,47 @@ const handleSubmit = async (e) => {
     }
 };
   return (
-    <div className="seccion">
-        <div className="projectos">
+    <div className="seccion precentacion contacto">
             <h2 className="tituloSeconSeccion">Contacto</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="nombre">Nombre:</label>
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    value={formData.nombre}
-                    onChange={handleChange}
-                    required
-                />
+            <div className="contenedorContacto">
+                <form className="elementIzq" onSubmit={handleSubmit}>
+                    <label htmlFor="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        value={formData.nombre}
+                        onChange={handleChange}
+                        required
+                        placeholder="Escribe tu nombre"
+                    />
 
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder="Escribe tu e-mail"
+                    />
 
-                <label htmlFor="mensaje">Mensaje:</label>
-                <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows="4"
-                    value={formData.mensaje}
-                    onChange={handleChange}
-                    required
-                ></textarea>
+                    <label htmlFor="mensaje">Mensaje:</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        value={formData.mensaje}
+                        onChange={handleChange}
+                        required
+                        placeholder="Escribe un Mensaje"
+                    ></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit">Enviar</button>
+                </form>
+                <img className="fotoContacto elementDer" src={contactoEmail} alt="imagenContacto" />
+            </div>
         </div>
-    </div>
 );                
 }

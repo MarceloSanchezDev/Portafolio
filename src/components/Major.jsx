@@ -2,10 +2,10 @@ import foto from '../assets/fotoCV1.svg'
 
 export function Major() {
     return (
-        <div className="seccion">
+        <div className="seccion precentacion">
             <div className='contenedor'>
                 <div className='contenedorFoto elementIzq' >
-                    <img className='fotoCV'  src={foto} alt="Foto de perfil" />
+                        <img className='fotoCV'  src={foto} alt="Foto de perfil" />
                 </div>
                 <div className='contenedorPresentacion '>
                     <h1 className="titulo ">Marcelo Sanchez</h1>

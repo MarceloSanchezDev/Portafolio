@@ -1,6 +1,7 @@
 //components
 import { Major } from './components/Major'
 import { Projects } from './components/Projects'
+import { Footer } from './components/Footer';
 import {Contact} from './components/Contact'
 import { useEffect } from 'react';
 
@@ -38,9 +39,10 @@ function App() {
   }, []);
   return (
     <div>
-      <Major></Major>
-      <Projects></Projects>
-      <Contact></Contact>
+      <Major/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
 
   )
