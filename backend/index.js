@@ -1,4 +1,4 @@
-import express from 'express';
+import express , {json} from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
@@ -9,11 +9,16 @@ dotenv.config();
 
 const app = express();
 const PORT = 3000;
-
-
+app.disable('x-powered-by')
+app.use(express.static('dist'));
 app.use(cors());
-app.use(bodyParser.json());
+app.use(json())
+app.use(cors())
 
+app.use(bodyParser.json());
+app.get('/',(req,res)=>{
+    
+})
 app.post('/send-email', (req, res) => {
     const { nombre, email, mensaje } = req.body;
 
