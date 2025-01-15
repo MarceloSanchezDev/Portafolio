@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT
 app.disable('x-powered-by')
 app.use(express.static('dist'));
 app.use(cors());
@@ -42,7 +42,6 @@ app.post('/send-email', (req, res) => {
         res.status(200).send('Correo enviado correctamente.');
     });
 });
-
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
