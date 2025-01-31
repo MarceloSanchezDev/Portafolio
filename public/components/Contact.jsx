@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        const response = await fetch('/send-email', {
+        const response = await fetch('/api/index.js', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
