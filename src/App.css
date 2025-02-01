@@ -84,6 +84,7 @@ a{
 
 }
 .caract{
+  font-family: Pooppins;
   width: 50%;
   text-align: left;
   border-right: 1px solid black;
@@ -469,7 +470,7 @@ footer{
       background-color: #d9d4e7;
       margin: 1%;
       width: 90%;
-      height: 75vh;
+      min-height: 100vh;
       border: 1px solid black;
       border-radius: 10px;
       box-shadow: 3px 14px 5px 0px black;
@@ -696,7 +697,7 @@ footer{
       background-color: #d9d4e7;
       margin: 1%;
       width: 90%;
-      height: 75vh;
+      min-height: 100vh;
       border: 1px solid black;
       border-radius: 10px;
       box-shadow: 3px 14px 5px 0px black;
@@ -844,7 +845,6 @@ footer{
     background-color: #d9d4e7;
     margin: 1%;
     width: 90%;
-    height: 100vh;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 8px 1px 5px 0px #000000b8;
