@@ -1,17 +1,17 @@
 //components
-import { Major } from './components/Major'
-import { Projects } from './components/Projects'
-import { Footer } from './components/Footer';
-import {Contact} from './components/Contact'
-import { useEffect } from 'react';
+import { Presentation } from "./components/Presentation";
+import { Projects } from "./components/Projects";
+import { Footer } from "./components/Footer";
+import { Contact } from "./components/Contact";
+import { useEffect } from "react";
 
 //style
-import './App.css'
+import "./App.css";
 
 function App() {
   useEffect(() => {
-    const elementDer = document.querySelectorAll('.elementDer');
-    const elementIzq = document.querySelectorAll('.elementIzq')
+    const elementDer = document.querySelectorAll(".elementDer");
+    const elementIzq = document.querySelectorAll(".elementIzq");
 
     const animarSecciones = () => {
       elementDer.forEach((element) => {
@@ -19,7 +19,7 @@ function App() {
         const windowHeight = window.innerHeight;
 
         if (seccionTop < windowHeight - 100) {
-          element.classList.add('visibleDer');
+          element.classList.add("visibleDer");
         }
       });
       elementIzq.forEach((element) => {
@@ -27,25 +27,24 @@ function App() {
         const windowHeight = window.innerHeight;
 
         if (seccionTop < windowHeight - 100) {
-          element.classList.add('visibleIzq');
+          element.classList.add("visibleIzq");
         }
       });
     };
 
-    window.addEventListener('scroll', animarSecciones);
+    window.addEventListener("scroll", animarSecciones);
     animarSecciones(); // Llamamos una vez para animar secciones visibles al cargar
 
-    return () => window.removeEventListener('scroll', animarSecciones);
+    return () => window.removeEventListener("scroll", animarSecciones);
   }, []);
   return (
     <div>
-      <Major/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Presentation />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;

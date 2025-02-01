@@ -12,14 +12,6 @@ export function Footer() {
               apasiona el desarrollo de software y este es mi <b>portafolio</b>,
               donde aplico tecnologías como Node.js y React.
             </p>
-            <p className="parrafoPresentacion ">
-              Pero no todo es código en mi vida. También soy un apasionado del
-              <b>básquet</b>, un deporte que me ha enseñado la importancia del
-              <b>el trabajo en equipo</b>,<b>la disciplina</b> y{" "}
-              <b>la toma de decisiones bajo presión</b>. Estos valores los
-              aplico en cada proyecto, buscando siempre mejorar y superar nuevos
-              desafíos.
-            </p>
             <h2 className="habilidades">🔥 Habilidades:</h2>
             <p className="parrafoPresentacion">
               ✅ <b>Técnicas:</b> JavaScript, React, Node.js, desarrollo web.
@@ -27,6 +19,14 @@ export function Footer() {
             <p className="parrafoPresentacion ">
               ✅ <b>Blandas:</b> Trabajo en equipo, resolución de problemas,
               adaptación al cambio y comunicación efectiva.
+            </p>
+            <p className="parrafoPresentacion ">
+              Pero no todo es código en mi vida. También soy un apasionado del
+              <b>básquet</b>, un deporte que me ha enseñado la importancia del
+              <b>el trabajo en equipo</b>,<b>la disciplina</b> y{" "}
+              <b>la toma de decisiones bajo presión</b>. Estos valores los
+              aplico en cada proyecto, buscando siempre mejorar y superar nuevos
+              desafíos.
             </p>
             <p className="parrafoPresentacion">
               Siempre estoy en constante aprendizaje, explorando nuevas
@@ -36,7 +36,7 @@ export function Footer() {
               sobre tecnología, ¡hablemos! 🚀
             </p>
             <div className="redSocial">
-              <h2>Redes Sociales</h2>
+              <h2>💼 Redes Sociales</h2>
               <div className="iconosRedSocial">
                 <a href="https://www.linkedin.com/in/marcelo-s%C3%A1nchez-a76772241/">
                   <svg

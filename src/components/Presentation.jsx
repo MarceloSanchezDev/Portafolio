@@ -1,6 +1,6 @@
 import foto from "../assets/FotoCV1.svg";
 
-export function Major() {
+export function Presentation() {
   return (
     <div className="seccion precentacion">
       <div className="contenedor">
@@ -9,7 +9,7 @@ export function Major() {
         </div>
         <div className="contenedorPresentacion ">
           <h1 className="titulo ">Marcelo Sánchez</h1>
-          <h2 className="subTitutlo elementDer">Desarrollador Full-Stack</h2>
+          <h2 className="subTitutlo elementDer">🛠️ Desarrollador Full-Stack</h2>
           <p className="parrafoPresentacion elementDer">
             Como desarrollador <b>Full-Stack</b>, tengo la capacidad de crear
             aplicaciones web completas, combinando
