@@ -596,6 +596,9 @@ footer{
   img{
     max-width: 100%;
   }
+.imagenProjecto > img {
+    display: none;
+  }
   .fotoCV{
     width: 50%;
     height: auto;
@@ -611,7 +614,7 @@ footer{
 ;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .contenedorFoto {
     display: flex
@@ -681,8 +684,8 @@ footer{
       line-height: normal;
     }
     .projectos{
-      background-color: #fffffe;
-      color: #0e172c;
+      background-color: #0e172c;
+      color: #fffffe;
       display: flex
 ;
       height: 100%;
@@ -691,10 +694,9 @@ footer{
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: center;
-      margin-bottom: 5%;
     }
     .projecto{
-      background-color: #d9d4e7;
+      background-color: #fffffe;
       margin: 1%;
       width: 90%;
       min-height: 100vh;
@@ -842,8 +844,10 @@ footer{
     display: none;
   }
   .projecto {
-    background-color: #d9d4e7;
+    background-color: #fffffe;
+    color: #0e172c;
     margin: 1%;
+    min-height: auto;
     width: 90%;
     border: 1px solid black;
     border-radius: 10px;
