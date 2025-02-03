@@ -854,8 +854,8 @@ footer{
     box-shadow: 8px 1px 5px 0px #000000b8;
 }
 .Info {
-  padding: 1%;
-  border-top: 1px solid black;
+  padding: 0;
+  border: none;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
