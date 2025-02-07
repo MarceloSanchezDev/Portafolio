@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="seccion f">
       <div className="footer">
-        <h1 className="titulo">🚀sobre mi: </h1>
+        <h1 className="tituloSeconSeccion">🚀sobre mi: </h1>
         <div className="sobreMi">
           <div className="sobreMiExplicacion">
             <p className="parrafoPresentacion ">
