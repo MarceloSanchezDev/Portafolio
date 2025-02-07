@@ -117,6 +117,7 @@ a{
 .botonProjecto:hover {
   background-color: #f9f8fc;
   color: #0e172c;
+  border: 1px solid #0e172c;
 }
 .habilidades{
   text-align: left;
