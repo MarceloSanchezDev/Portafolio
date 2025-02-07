@@ -13,7 +13,7 @@ body{
   color: #0e172c;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: VT323;
+  font-family: Poppins;
 }
 ::-webkit-scrollbar{
   display: none;
@@ -63,6 +63,7 @@ a{
 }
 .tituloProjecto{
   height: 10%;
+
   display: flex;
         border-bottom: 1px solid black;
         flex-direction: row;
@@ -72,6 +73,7 @@ a{
 }
 .tituloProjecto > h1{
   margin: 1%;
+  font-family: Poppins;
 }
 .Info{
   padding: 1%;
@@ -118,6 +120,9 @@ a{
 }
 .habilidades{
   text-align: left;
+}
+.titulo{
+  font-family: VT323;
 }
 /*Escritorio*/
 @media screen and (min-width: 1024px){
@@ -635,6 +640,16 @@ footer{
     transition: background-color 0.3s ease;
     margin: 1%;
 }
+.tituloProjecto {
+  height: 10%;
+  display: flex
+;
+  border-bottom: 1px solid black;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .parrafoH{
   font-size: 12px;
   padding-bottom: 10%;
@@ -900,7 +915,7 @@ font-family: poppins;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 form{
   background-color: #0e172c;
