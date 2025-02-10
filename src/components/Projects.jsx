@@ -9,7 +9,7 @@ export function Projects() {
           titulo="App Web  de Peliculas 🍿🎬 "
           img={appPeliculas}
           descript="Página de Películas Una aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener datos de películas y cuenta con un sistema de autenticación desarrollado en Node.js. Frontend creado con React y estilizado con Bootstrap."
-          url="https://pagina-de-peliculas.onrender.com/"
+          url="https://peliculas-murex.vercel.app/"
           tec={["React.js", "Node.js", "Bootstrap"]}
         ></Project>
         <Project
