@@ -14,17 +14,17 @@ export function Footer() {
             </p>
             <h2 className="habilidades">🔥 Habilidades:</h2>
             <p className="parrafoPresentacion">
-              ✅ <b>Técnicas:</b> JavaScript, React, Node.js, desarrollo web.
+              ✅ <b>Técnicas: </b> JavaScript, React, Node.js, desarrollo web.
             </p>
             <p className="parrafoPresentacion ">
-              ✅ <b>Blandas:</b> Trabajo en equipo, resolución de problemas,
+              ✅ <b>Blandas: </b> Trabajo en equipo, resolución de problemas,
               adaptación al cambio y comunicación efectiva.
             </p>
             <p className="parrafoPresentacion ">
               Pero no todo es código en mi vida. También soy un apasionado del
-              <b>básquet</b>, un deporte que me ha enseñado la importancia del
-              <b>el trabajo en equipo</b>,<b>la disciplina</b> y{" "}
-              <b>la toma de decisiones bajo presión</b>. Estos valores los
+              <b> básquet </b>, un deporte que me ha enseñado la importancia del
+              <b> trabajo en equipo</b>,<b> la disciplina</b> y{" "}
+              <b> la toma de decisiones bajo presión</b>. Estos valores los
               aplico en cada proyecto, buscando siempre mejorar y superar nuevos
               desafíos.
             </p>
@@ -36,7 +36,7 @@ export function Footer() {
               sobre tecnología, ¡hablemos! 🚀
             </p>
             <div className="redSocial">
-              <h2>💼 Redes Sociales</h2>
+              <h2 className="tituloRedes">💼 Redes Sociales</h2>
               <div className="iconosRedSocial">
                 <a href="https://www.linkedin.com/in/marcelo-s%C3%A1nchez-a76772241/">
                   <svg
