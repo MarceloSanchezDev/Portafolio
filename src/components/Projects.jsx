@@ -8,9 +8,9 @@ export function Projects() {
         <Project
           titulo="App Web  de Peliculas 🍿🎬 "
           img={appPeliculas}
-          descript="Página de Películas Una aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener datos de películas y cuenta con un sistema de autenticación desarrollado en Node.js. Frontend creado con React y estilizado con Bootstrap."
+          descript="Una aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener datos de películas y cuenta con un sistema de autenticación desarrollado en Node.js. Frontend creado con React y estilizado con Bootstrap."
           url="https://peliculas-murex.vercel.app/"
-          tec={["React.js", "Node.js", "Bootstrap"]}
+          tec={["React.js", "Node.js", "MySQL", "Bootstrap"]}
         ></Project>
         <Project
           titulo="App Web de Estadisticas 📊📈"

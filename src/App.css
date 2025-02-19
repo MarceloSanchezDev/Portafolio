@@ -75,6 +75,9 @@ a{
   margin: 1%;
   font-family: Poppins;
 }
+.tituloRedes{
+  margin-bottom: 16px;
+}
 .Info{
   padding: 1%;
   border-top: 1px solid black;
