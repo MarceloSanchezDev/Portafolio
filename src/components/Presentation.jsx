@@ -1,4 +1,4 @@
-import foto from "../assets/FotoCV1.svg";
+import foto from "../assets/fotoCV.jpg";
 
 export function Presentation() {
   return (

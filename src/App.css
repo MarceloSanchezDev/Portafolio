@@ -192,6 +192,7 @@ animation: aparecer 1s infinite alternate;
 }
 
 .fotoCV{
+    border-radius: 50%;
     margin-left: 50px;
     width: 50%;
     max-width: 100%;
@@ -381,6 +382,7 @@ footer{
     max-width: 100%;
   }
   .fotoCV{
+    border-radius: 50%;
     width: 50%;
     height: auto;
     flex-shrink: 0;
@@ -609,6 +611,7 @@ footer{
     display: none;
   }
   .fotoCV{
+    border-radius: 50%;
     width: 50%;
     height: auto;
     flex-shrink: 0;
