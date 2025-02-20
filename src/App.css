@@ -227,7 +227,7 @@ animation: aparecer 1s infinite alternate;
   background-color: #fffffe;
   color: #0e172c;
   margin: 1%;
-  width: 80%;
+  width: 70%;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 3px 14px 5px 0px black;
@@ -239,6 +239,7 @@ animation: aparecer 1s infinite alternate;
 }
 .imagenProjecto > img {
   width: 100%;
+  height: vh;
   display: block; 
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
