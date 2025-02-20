@@ -36,6 +36,9 @@ a{
   color: #0e172c;
   animation: cambioColor 4s forwards;
 }
+.aparecer{
+  animation: aparecer 1s forwards;
+}
 .elementDer.visibleDer {
   opacity: 1;
   transform: translateX(0) translateY(0) translateZ(0);
@@ -46,7 +49,7 @@ a{
 }
 .lista{
   display: flex;
-          flex-direction: row;
+  flex-direction: row;
           justify-content: center;
 }
 .lista  > li{
@@ -240,8 +243,8 @@ animation: aparecer 1s infinite alternate;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .imagenProjecto > img:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05); 
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
 }
 
 

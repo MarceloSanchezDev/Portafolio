@@ -1,6 +1,21 @@
-import appPeliculas from "../assets/appPeliculas.png";
+import { useState } from "react";
 
 export function Project({ titulo, img, descript, url, tec }) {
+  const [imgActual, setImgActual] = useState(img[0]);
+  const [aparecer, setAparecer] = useState(true);
+  const change = () => {
+    setAparecer(false);
+
+    setTimeout(() => {
+      setImgActual((prev) => {
+        const index = img.indexOf(prev);
+        const nextIndex = (index + 1) % img.length;
+        return img[nextIndex];
+      });
+
+      setAparecer(true);
+    }, 300);
+  };
   return (
     <div className="projecto elementIzq">
       <div className="tituloProjecto">
@@ -9,8 +24,8 @@ export function Project({ titulo, img, descript, url, tec }) {
           Ver projecto
         </a>
       </div>
-      <div className="imagenProjecto">
-        <img src={img} alt="Imagen Projecto" />
+      <div className={`imagenProjecto ${aparecer ? "aparecer" : ""}`}>
+        <img onClick={change} src={imgActual} alt="Imagen Projecto" />
       </div>
       <div className="Info">
         <div className="caract">
