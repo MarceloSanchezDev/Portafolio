@@ -19,7 +19,7 @@ export function Projects() {
           img={[appPeliculas2, appPeliculas3, appPeliculas4]}
           descript="Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite ver el rendimiento de los jugadores, con detalles sobre aciertos y fallos. La estructura del proyecto está dividida en workspaces para el backend y frontend.
 Utiliza React en el frontend y Node.js con Express en el backend. Implementa autenticación con JWT y protección de contraseñas con Bcrypt. Usa MySQL para gestionar los datos y Zod para validación."
-          url="https://estadisticas-app.onrender.com/"
+          url="https://estad-sticas-baloncesto-app.vercel.app/"
           tec={["React.js", "Node.js", "MySQL ", "Bootstrap"]}
         ></Project>
         <Project
