@@ -1,5 +1,6 @@
 .presentacion{
   background-color:rgb(254, 199, 215);
+  min-height: 100vh;
 }
 .projectos{
   background-color:rgb(14, 23, 44);

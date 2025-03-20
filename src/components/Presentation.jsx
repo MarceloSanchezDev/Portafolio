@@ -3,7 +3,7 @@ import foto from "../assets/fotoCV.jpg";
 export function Presentation() {
   return (
     <div className="container-fluid presentacion">
-      <div className="container vh-100 d-flex align-items-center justify-content-center">
+      <div className="container d-flex align-items-center justify-content-center">
         <div className="row d-flex flex-sm-column flex-lg-row">
           <div className=" col-sm-12 col-lg-6 d-flex align-items-center justify-content-center ">
             <img
