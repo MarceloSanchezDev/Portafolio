@@ -1,0 +1,1040 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*
+  border: 1px solid red;
+  */  
+}
+footer{
+  min-height: 100vh;
+}
+body{
+  color: #0e172c;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: #f9f8fc;
+}
+.elementDer{
+  opacity: 0;
+  transform: translateX(10px) translateY(20px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.elementIzq{
+  opacity: 0;
+  transform: translateX(-10px) translateY(20px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.precentacion{
+  color: #0e172c;
+  animation: cambioColor 4s forwards;
+}
+.aparecer{
+  animation: aparecer 1s forwards;
+}
+.elementDer.visibleDer {
+  opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0);
+}
+.elementIzq.visibleIzq {
+  opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0);
+}
+.lista{
+  display: flex;
+  flex-direction: row;
+          justify-content: center;
+}
+.lista  > li{
+  list-style: none;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  border-radius: 10px;
+  height: 30px;
+  background-color: #0e172c;
+  color: #fffffe;
+}
+.tituloProjecto{
+  height: 10%;
+
+  display: flex;
+        border-bottom: 1px solid black;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+}
+.tituloProjecto > h1{
+  margin: 1%;
+  font-family: Poppins;
+}
+.tituloRedes{
+  margin-bottom: 16px;
+}
+.Info{
+  padding: 1%;
+  border-top: 1px solid black;
+  display: flex
+;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+.caract{
+  font-family: Pooppins;
+  width: 50%;
+  text-align: left;
+  border-right: 1px solid black;
+}
+.parrafoH{
+  font-family: Poppins;
+}
+.parrafoPresentacion{
+  font-family: Poppins;
+
+}
+.tec{
+  width: 50%;
+  text-align: center;
+}
+.botonProjecto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0e172c;
+  color: #f9f8fc;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 1%;
+}
+
+.botonProjecto:hover {
+  background-color: #f9f8fc;
+  color: #0e172c;
+  border: 1px solid #0e172c;
+}
+.habilidades{
+  text-align: left;
+}
+.titulo{
+  font-family: VT323;
+}
+/*Escritorio*/
+@media screen and (min-width: 1024px){
+.seccion{
+  height: 100vh;
+  min-height: 750px;
+}
+
+.titulo{
+  min-width: 450px;
+}
+.contenedor{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorFoto{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.contenedorPresentacion{
+  display: flex  ;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  
+}
+.titulo{
+padding: 1%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 45%;
+  overflow: hidden; 
+  white-space: nowrap;
+  animation: typing 4s steps(30);
+}
+.titulo::after{
+content: "|";
+animation: aparecer 1s infinite alternate;
+}
+.subTitutlo{
+  margin:1%;
+  font-family: VT323;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+    animation: aparecer 2s steps(30);
+}
+.parrafoPresentacion{
+    margin: 1%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    animation: aparecer 2s steps(30);
+}
+
+.fotoCV{
+    border-radius: 50%;
+    margin-left: 50px;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    animation: aparecer 2s steps(30);
+    animation: movimiento 1s;
+}
+.tituloSeconSeccion{
+  padding:1%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.projectos{
+  background-color: #0e172c;
+  color: #fffffe;
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.projecto{
+  background-color: #fffffe;
+  color: #0e172c;
+  margin: 1%;
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 14px 5px 0px black;
+}
+
+.imagenProjecto{
+  width: 100%;
+  overflow: hidden;
+}
+.imagenProjecto > img {
+  width: 100%;
+  height: vh;
+  display: block; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.imagenProjecto > img:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+}
+
+
+.precentacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorContacto{
+  display: flex;
+          width: 100%;
+          height: 100vh;
+          margin: 1%;
+          padding: 1%;
+          min-height: 720px;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+}
+.fotoContacto{
+  width: 40%;
+  height:70%;
+  border-radius: 0 10px 10px 0;
+}
+form{
+  background-color: #0e172c;
+  color: #d9d4e7;
+  display: flex;
+  height: 70%;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+form > label{
+  margin: 1%;
+  font-size: 25px;
+}
+form > textarea{
+  background-color: #d9d4e7;
+  width: 98%;
+  max-width: 98%;
+  min-height: 20%;
+  max-height: 25%;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin: 1%;
+  font-size: 15px;
+  border-radius: 10px;
+}
+form > input {
+  background-color: #d9d4e7;
+  width: 98%;
+  margin: 1%;
+  height: 4rem;
+  padding-left: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+}
+form > button{
+  font-size: 20px;
+  font-weight: 700;
+    background-color: #a786df;
+  margin: auto;
+  width: 20%;
+  height: 10%;
+  border-radius: 10px
+}
+form > button:hover{
+  background-color: #fffffe;
+  cursor: pointer;
+  border: 5px solid #a786df;
+}
+footer{
+  background-color: #0e172c;
+  color: #fffffe;
+}
+.sobreMi{
+  background-color:#0e172c;
+  padding: 1%;
+  display: flex
+  ;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1%;
+}
+.sobreMiExplicacion{
+  display: flex
+  ;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-evenly;
+}
+.redSocial{
+  display: flex
+  ;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+}
+.fotoSobreMi{
+  border-radius: 25px;
+  width: 400px;
+  max-height: 450px;
+}
+.fotoSocial:hover{
+  border: 1px solid #fffffe;
+  cursor: pointer;
+  color: #0e172c;
+  background-color: #fffffe;
+}
+.iconosRedSocial{
+  display: flex
+  ;
+          width: 100%;
+          justify-content: space-evenly;
+}
+}
+
+/*Tablet*/
+
+@media screen and (min-width:481px) and (max-width: 1023px ){
+  .seccion{
+    min-height: 720px;
+    height: 100vh;
+    width: 100%;
+    min-width: 720px;
+
+  }
+  .parrafoH{
+    font-size: 20px;
+  }
+  img{
+    max-width: 100%;
+  }
+  .fotoCV{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    animation: aparecer 2s steps(30);
+    animation: movimiento 1s;
+  }
+  .precentacion{
+    color: #0e172c;
+    animation: cambioColor 4s forwards;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor{
+    display: flex
+    ;
+            min-height: 80vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+  }
+  .contenedorFoto{
+    display: flex    ;
+    width: 60%;
+            align-items: center;
+            justify-content: center;
+    
+  }
+  .contenedorPresentacion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+  }
+  .titulo{
+      padding: 1%;
+      font-size: 30px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 45%;
+      overflow: hidden; 
+      white-space: nowrap;
+      animation: typing 4s steps(30);
+    }
+    .titulo::after{
+    content: "|";
+    animation: aparecer 1s infinite alternate;
+    }
+    .subTitutlo{
+      padding: 1%;
+      font-family: VT323;
+      text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 45%;
+        animation: aparecer 2s steps(30);
+    }
+    .parrafoPresentacion{
+        padding: 1%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 90%;
+        animation: aparecer 2s steps(30);
+    }
+    .tituloSeconSeccion{
+      padding:1%;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .projectos{
+      background-color: #fffffe;
+      color: #0e172c;
+      display: flex
+;
+      height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin-bottom: 5%;
+    }
+    .projecto{
+      background-color: #d9d4e7;
+      margin: 1%;
+      width: 90%;
+      min-height: 100vh;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 3px 14px 5px 0px black;
+    }
+    .caract{    text-align: center;}
+    .lista{
+      display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    
+    .contenedorContacto{
+      display: flex;
+              width: 100%;
+              height: 100vh;
+              margin: 1%;
+              padding: 1%;
+              min-height: 720px;
+              flex-wrap: nowrap;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+    .fotoContacto{
+      width: 40%;
+      height:70%;
+      border-radius: 0 10px 10px 0;
+    }
+    form{
+      background-color: #0e172c;
+      color: #d9d4e7;
+      display: flex
+;
+      height: 77%;
+      width: 90%;
+      border-radius: 10px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+    form > label{
+      margin: 1%;
+      font-size: 25px;
+    }
+    form > textarea{
+      background-color: #d9d4e7;
+      width: 98%;
+      max-width: 98%;
+      min-height: 20%;
+      max-height: 25%;
+      padding-top: 10px;
+      padding-left: 20px;
+      margin: 1%;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+    form > input {
+      background-color: #d9d4e7;
+      width: 98%;
+      margin: 1%;
+      height: 4rem;
+      padding-left: 20px;
+      font-weight: 700;
+      border-radius: 10px;
+      border: none;
+    }
+    form > button{
+      font-size: 20px;
+      font-weight: 700;
+        background-color: #a786df;
+      margin: auto;
+      width: 20%;
+      height: 10%;
+      border-radius: 10px
+    }
+    .fotoContacto{
+      display: none;
+    }
+    .footer{
+      background-color: #0e172c;
+      color: #fffffe;
+      display: flex
+;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sobreMi{
+      display: flex;
+    }
+    .fotoSobreMi {
+      display: none;
+    }
+    .sobreMiExplicacion{
+      height: 80vh;
+      display: flex
+;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .f{
+      background-color: #0e172c;
+    }
+    .redSocial{
+      display: flex
+;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+    }
+    .iconosRedSocial{
+      padding-top: 50px ;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+}
+/*Telefono*/
+@media screen and (max-width: 480px) {
+  img{
+    max-width: 100%;
+  }
+.imagenProjecto > img {
+    display: none;
+  }
+  .fotoCV{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    animation: aparecer 2s steps(30);
+    animation: movimiento 1s;
+  }
+  .precentacion{
+    color: #0e172c;
+    animation: cambioColor 4s forwards;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contenedorFoto {
+    display: flex
+    ;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+  }
+  .botonProjecto {
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: #0e172c;
+    color: #f9f8fc;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 1%;
+}
+.tituloProjecto {
+  height: 10%;
+  display: flex
+;
+  border-bottom: 1px solid black;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.parrafoH{
+  font-size: 12px;
+  padding-bottom: 10%;
+}
+  .titulo{
+      padding: 1%;
+      font-size: 30px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      width: 45%;
+      overflow: hidden; 
+      white-space: nowrap;
+      animation: typing 4s steps(30);
+    }
+    .titulo::after{
+    content: "|";
+    animation: aparecer 1s infinite alternate;
+    }
+    .subTitutlo{
+      padding: 1%;
+      font-family: VT323;
+      text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 45%;
+        animation: aparecer 2s steps(30);
+    }
+    .parrafoPresentacion{
+        padding: 1%;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 90%;
+        animation: aparecer 2s steps(30);
+    }
+
+    .tituloSeconSeccion{
+      padding:1%;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .projectos{
+      background-color: #0e172c;
+      color: #fffffe;
+      display: flex
+;
+      height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .projecto{
+      background-color: #fffffe;
+      margin: 1%;
+      width: 90%;
+      min-height: 100vh;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 3px 14px 5px 0px black;
+    }
+    .caract{    text-align: center;}
+    
+    .contenedorContacto{
+      display: flex;
+              width: 100%;
+              height: 100vh;
+              margin: 1%;
+              padding: 1%;
+              min-height: 720px;
+              flex-wrap: nowrap;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+    }
+    .fotoContacto{
+      width: 40%;
+      height:70%;
+      border-radius: 0 10px 10px 0;
+    }
+    form{
+      background-color: #0e172c;
+      color: #d9d4e7;
+      display: flex
+;
+      height: 77%;
+      width: 90%;
+      border-radius: 10px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+    form > label{
+      margin: 1%;
+      font-size: 25px;
+    }
+    form > textarea{
+      background-color: #d9d4e7;
+      width: 98%;
+      max-width: 98%;
+      min-height: 20%;
+      max-height: 25%;
+      padding-top: 10px;
+      padding-left: 20px;
+      margin: 1%;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+    form > input {
+      background-color: #d9d4e7;
+      width: 98%;
+      margin: 1%;
+      height: 4rem;
+      padding-left: 20px;
+      font-weight: 700;
+      border-radius: 10px;
+      border: none;
+    }
+    .footer{
+      background-color: #0e172c;
+      color: #fffffe;
+      display: flex
+;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sobreMi{
+      display: flex;
+    }
+    .fotoSobreMi {
+      display: none;
+    }
+    .sobreMiExplicacion{
+      height: 80vh;
+      display: flex
+;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .f{
+      background-color: #0e172c;
+    }
+    .redSocial{
+      display: flex
+;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+    }
+    .iconosRedSocial{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+
+  .seccion{
+    width: 100vw;
+    height: 100vh;
+    min-height: 750px;
+  }
+  .contenedor {
+    margin-top: 24px;
+    height: 100%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+  .contenedorPresentacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+ .titulo {
+  padding: 1%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30);
+}
+.subTitutlo {
+  margin: 1%;
+  font-family: VT323;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+}
+  .fotoSobreMi{
+    display: none;
+  }
+  .projecto {
+    background-color: #fffffe;
+    color: #0e172c;
+    margin: 1%;
+    min-height: auto;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 1px 5px 0px #000000b8;
+}
+.Info {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.caract {
+  width: 100%;
+  text-align: left;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+.caract > h2{
+  text-align: center;
+  font-size: 24px;
+}
+.caract > p {
+  padding: 2%;
+  font-family: poppins;
+  font-size: 16px;
+}
+  .lista {
+    display: flex
+;
+font-family: poppins;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+}
+.fotoContacto{
+  display: none;
+}
+.contenedorContacto {
+  display: flex
+;
+  width: 100%;
+  height: 100vh;
+  margin: 1%;
+  padding: 1%;
+  min-height: 720px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+form{
+  background-color: #0e172c;
+  color: #d9d4e7;
+  display: flex
+;
+  height: 70%;
+  width: 90%;
+  border-radius: 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+form > button {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #a786df;
+  margin: auto;
+  width: 50%;
+  height: 10%;
+  border-radius: 10px;
+}
+form > input {
+  background-color: #d9d4e7;
+  width: 90%;
+  margin: auto;
+  height: 4rem;
+  padding-left: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+}
+form > label {
+  margin: 2%;
+  font-size: 25px;
+}
+form > textarea {
+  background-color: #d9d4e7;
+  width: 90%;
+  max-width: 98%;
+  min-height: 20%;
+  max-height: 25%;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin: auto;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.sobreMi {
+  padding: 1%;
+  display: flex
+;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 1%;
+  align-items: center;
+}
+.parrafoSobreMi {
+  font-size: 17px;
+}
+}
+/*----------------------------------------------------------- Animacion ----------------------------------------------------------- */
+@keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+  }
+
+@keyframes crecer {
+  from{
+      transform: scale(1);
+    }
+  to{
+    transform: scale(1.3);
+    box-shadow: inset 0px -20px 20px 20px black;
+  }
+}
+
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes movimiento {
+  0%   { left:-500px; }
+  100% { left:0px; }
+}
+@keyframes cambioColor {
+  from{
+    background-color: #fffffe;
+  }
+  to{
+    background-color: #fec7d7;
+  }
+}
+@keyframes back {
+0%   { background-color: rgb(0, 0, 0);
+color: black; ;}
+50%  { background-color: rgb(133, 133, 133);
+color: black; }
+100% { background-color: rgb(255, 255, 255);
+color: black;}
+}

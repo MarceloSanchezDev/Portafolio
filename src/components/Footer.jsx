@@ -1,26 +1,27 @@
 import sobreMi from "../assets/sobremi.jpg";
 export function Footer() {
   return (
-    <footer className="seccion f">
-      <div className="footer">
-        <h1 className="tituloSeconSeccion">🚀sobre mi: </h1>
-        <div className="sobreMi">
-          <div className="sobreMiExplicacion">
-            <p className="parrafoPresentacion ">
+    <footer className="footer container-fluid text-white d-flex flex-column flex-sm-row justify-content-around align-items-center pt-2">
+      <div className="container">
+        <h1 className="fs-1 text-center">🚀sobre mi: </h1>
+        <div className="d-flex flex-column justify-content-around align-items-center">
+          <div className="container d-flex flex-column justify-content-around align-items-center">
+            <p className="text-start">
               Soy <b>Marcelo Sánchez</b>, tengo 24 años y soy estudiante de
               Informática en la <i>Universidad Nacional de Hurlingham</i>. Me
               apasiona el desarrollo de software y este es mi <b>portafolio</b>,
               donde aplico tecnologías como Node.js y React.
             </p>
-            <h2 className="habilidades">🔥 Habilidades:</h2>
-            <p className="parrafoPresentacion">
-              ✅ <b>Técnicas: </b> JavaScript, React, Node.js, desarrollo web.
+            <h2 className="fs-2 text-center">🔥 Habilidades</h2>
+            <p className="text-start">
+              ✅ <b className="">Técnicas: </b> JavaScript, React, Node.js,
+              desarrollo web.
             </p>
-            <p className="parrafoPresentacion ">
+            <p className=" text-start">
               ✅ <b>Blandas: </b> Trabajo en equipo, resolución de problemas,
               adaptación al cambio y comunicación efectiva.
             </p>
-            <p className="parrafoPresentacion ">
+            <p className=" ">
               Pero no todo es código en mi vida. También soy un apasionado del
               <b> básquet </b>, un deporte que me ha enseñado la importancia del
               <b> trabajo en equipo</b>,<b> la disciplina</b> y{" "}
@@ -28,16 +29,16 @@ export function Footer() {
               aplico en cada proyecto, buscando siempre mejorar y superar nuevos
               desafíos.
             </p>
-            <p className="parrafoPresentacion">
+            <p className="">
               Siempre estoy en constante aprendizaje, explorando nuevas
               tecnologías y mejorando mis habilidades. Mi objetivo es crecer
               como profesional y aportar soluciones innovadoras en el mundo IT.
               Si tienes un proyecto interesante o simplemente quieres charlar
               sobre tecnología, ¡hablemos! 🚀
             </p>
-            <div className="redSocial">
-              <h2 className="tituloRedes">💼 Redes Sociales</h2>
-              <div className="iconosRedSocial">
+            <div className="container d-flex flex-column justify-content-around align-items-center">
+              <h2 className="fs-2">💼 Redes Sociales</h2>
+              <div className="container d-flex flex-row justify-content-around align-items-center my-3">
                 <a href="https://www.linkedin.com/in/marcelo-s%C3%A1nchez-a76772241/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +66,9 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <img src={sobreMi} className="fotoSobreMi  elementDer" alt="" />
         </div>
       </div>
+      <img className=" img-fluid my-2 rounded-3" alt="" src={sobreMi} />
     </footer>
   );
 }
