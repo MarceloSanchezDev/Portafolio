@@ -35,50 +35,63 @@ export function Contact() {
     }
   };
   return (
-    <div className="seccion precentacion contacto">
-      <h2 className="tituloSeconSeccion">📧 Contacto</h2>
-      <div className="contenedorContacto">
-        <form className="elementIzq" onSubmit={handleSubmit}>
-          <label htmlFor="nombre">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            required
-            placeholder="Escribe tu nombre"
-          />
+    <div className="contacto container-fluid d-flex flex-column justify-content-around align-items-center">
+      <h2 className="text-center fs-1">📧 Contacto</h2>
+      <div className="row w-100 d-flex justify-content-around align-items-center">
+        <form
+          className="container border rounded-3 border-info bg-dark text-white p-3 col-md-6 col-12"
+          onSubmit={handleSubmit}
+        >
+          <div className="my-3">
+            <label htmlFor="nombre" className="form-label">
+              Nombre:
+            </label>
+            <input
+              className="form-control"
+              type="text"
+              id="nombre"
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
+              required
+              placeholder="Escribe tu nombre"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+              Email:
+            </label>
+            <input
+              className="form-control"
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="Escribe tu e-mail"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="mensaje" className="form-label">
+              Mensaje:
+            </label>
+            <textarea
+              className="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              value={formData.mensaje}
+              onChange={handleChange}
+              required
+              placeholder="Escribe un Mensaje"
+            ></textarea>
+          </div>
 
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            placeholder="Escribe tu e-mail"
-          />
-
-          <label htmlFor="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="4"
-            value={formData.mensaje}
-            onChange={handleChange}
-            required
-            placeholder="Escribe un Mensaje"
-          ></textarea>
-
-          <button type="submit">Enviar</button>
+          <button type="submit" className="btn btn-primary mb-3">
+            Enviar
+          </button>
         </form>
-        <img
-          className="fotoContacto elementDer"
-          src={contactoEmail}
-          alt="imagenContacto"
-        />
       </div>
     </div>
   );

@@ -2,39 +2,43 @@ import { Project } from "./Project";
 import appPeliculas2 from "../assets/AppPeliculasDetails.png";
 import appPeliculas3 from "../assets/AppPeliculasList.png";
 import appPeliculas4 from "../assets/AppPeliculasRes.png";
+import appEstat1 from "../assets/EstadisticasBaloncesto-Init.png";
+import appEstat2 from "../assets/EstadisticasBaloncesto-Stats.png";
+import appEstat3 from "../assets/EstadisticasBaloncesto-statInfo.png";
 export function Projects() {
   return (
-    <div>
-      <div className="projectos">
-        <h1 className="tituloSeconSeccion ">🌐 Projectos</h1>
+    <div className="container-fluid projectos text-white text-center d-flex align-items-center justify-content-around flex-column">
+      <h1 className="fs-1">🌐 Projectos</h1>
+      <div className="row text-start d-flex flex-md-column flex-lg-row align-items-center justify-content-around w-100">
         <Project
+          id={"appMovie"}
           titulo="App Web  de Peliculas 🍿🎬 "
           img={[appPeliculas2, appPeliculas3, appPeliculas4]}
-          descript="Una aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener datos de películas y cuenta con un sistema de autenticación desarrollado en Node.js. Frontend creado con React y estilizado con Bootstrap."
+          descript={
+            "Aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener información detallada de cada película y permite a los usuarios agregar títulos a su lista personal. Cuenta con autenticación mediante JWT y cifrado de contraseñas con Bcrypt. El backend está desarrollado con Node.js y Express, y la base de datos en MySQL. La validación de datos se realiza con Zod. El frontend está construido con React y estilizado con Bootstrap, ofreciendo una experiencia de usuario intuitiva y responsiva."
+          }
           url="https://peliculas-murex.vercel.app/"
-          tec={["React.js", "Node.js", "MySQL", "Bootstrap"]}
+          tec={[
+            { nombre: "React.js", uso: "Front-End" },
+            { nombre: "Bootstrap", uso: "Front-End" },
+            { nombre: "Node.js", uso: "Back-End" },
+            { nombre: "MySQL", uso: "Base de Datos" },
+          ]}
         ></Project>
         <Project
+          id={"appStatistic"}
           titulo="App Web de Estadisticas 📊📈"
-          img={[appPeliculas2, appPeliculas3, appPeliculas4]}
-          descript="Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite ver el rendimiento de los jugadores, con detalles sobre aciertos y fallos. La estructura del proyecto está dividida en workspaces para el backend y frontend.
-Utiliza React en el frontend y Node.js con Express en el backend. Implementa autenticación con JWT y protección de contraseñas con Bcrypt. Usa MySQL para gestionar los datos y Zod para validación."
+          img={[appEstat1, appEstat2, appEstat3]}
+          descript={
+            "Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite analizar el rendimiento de los jugadores en distintos partidos, mostrando aciertos y fallos detallados. Usa React en el frontend con Bootstrap para una interfaz dinámica y adaptable. El backend está desarrollado con Node.js y Express, gestionando la lógica del negocio y la autenticación con JWT. Protege contraseñas con Bcrypt y almacena datos en MySQL. La validación de la información se realiza con Zod, asegurando integridad y consistencia en los datos registrados."
+          }
           url="https://estad-sticas-baloncesto-app.vercel.app/"
-          tec={["React.js", "Node.js", "MySQL ", "Bootstrap"]}
-        ></Project>
-        <Project
-          titulo="App de Peliculas"
-          img={[appPeliculas2, appPeliculas3, appPeliculas4]}
-          descript="Una App de Peliculas"
-          url="https://pagina-de-peliculas.onrender.com/"
-          tec={["React.js", "Node.js", "Bootstrap"]}
-        ></Project>
-        <Project
-          titulo="App de Peliculas"
-          img={[appPeliculas2, appPeliculas3, appPeliculas4]}
-          descript="Una App de Peliculas"
-          url="https://pagina-de-peliculas.onrender.com/"
-          tec={["React.js", "Node.js", "Bootstrap"]}
+          tec={[
+            { nombre: "React.js", uso: "Front-End" },
+            { nombre: "Bootstrap", uso: "Front-End" },
+            { nombre: "Node.js", uso: "Back-End" },
+            { nombre: "MySQL", uso: "Base de Datos" },
+          ]}
         ></Project>
       </div>
     </div>
