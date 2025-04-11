@@ -32,7 +32,7 @@ export function Projects() {
           descript={
             "Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite analizar el rendimiento de los jugadores en distintos partidos, mostrando aciertos y fallos detallados. Usa React en el frontend con Bootstrap para una interfaz dinámica y adaptable. El backend está desarrollado con Node.js y Express, gestionando la lógica del negocio y la autenticación con JWT. Protege contraseñas con Bcrypt y almacena datos en MySQL. La validación de la información se realiza con Zod, asegurando integridad y consistencia en los datos registrados."
           }
-          url="https://estad-sticas-baloncesto-app.vercel.app/"
+          url="https://estadisticas-baloncesto-app.vercel.app/"
           tec={[
             { nombre: "React.js", uso: "Front-End" },
             { nombre: "Bootstrap", uso: "Front-End" },
