@@ -5,6 +5,9 @@ import appPeliculas4 from "../assets/AppPeliculasRes.png";
 import appEstat1 from "../assets/EstadisticasBaloncesto-Init.png";
 import appEstat2 from "../assets/EstadisticasBaloncesto-Stats.png";
 import appEstat3 from "../assets/EstadisticasBaloncesto-statInfo.png";
+import appTODO1 from "../assets/TO-DOAPP1.png";
+import appTODO2 from "../assets/TO-DOAPP2.png";
+import appTODO3 from "../assets/TO-DOAPP3.png";
 export function Projects() {
   return (
     <div className="container-fluid projectos text-white text-center d-flex align-items-center justify-content-around flex-column">
@@ -33,6 +36,21 @@ export function Projects() {
             "Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite analizar el rendimiento de los jugadores en distintos partidos, mostrando aciertos y fallos detallados. Usa React en el frontend con Bootstrap para una interfaz dinámica y adaptable. El backend está desarrollado con Node.js y Express, gestionando la lógica del negocio y la autenticación con JWT. Protege contraseñas con Bcrypt y almacena datos en MySQL. La validación de la información se realiza con Zod, asegurando integridad y consistencia en los datos registrados."
           }
           url="https://estadisticas-baloncesto-app.vercel.app/"
+          tec={[
+            { nombre: "React.js", uso: "Front-End" },
+            { nombre: "Bootstrap", uso: "Front-End" },
+            { nombre: "Node.js", uso: "Back-End" },
+            { nombre: "MySQL", uso: "Base de Datos" },
+          ]}
+        ></Project>
+        <Project
+          id={"todoList"}
+          titulo="TO-DO List 📋✔️"
+          img={[appTODO1, appTODO2, appTODO3]}
+          descript={
+            "TO-DO APP es una aplicación simple y funcional desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La aplicación está dividida en dos secciones principales: tareas pendientes y tareas completadas. Su objetivo es ayudar al usuario a organizarse mejor, registrar actividades por hacer y marcar como completadas aquellas que ya han sido realizadas."
+          }
+          url="https://todolistmarcelosanchezdev.vercel.app/"
           tec={[
             { nombre: "React.js", uso: "Front-End" },
             { nombre: "Bootstrap", uso: "Front-End" },
