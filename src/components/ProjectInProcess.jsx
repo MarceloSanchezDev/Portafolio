@@ -2,8 +2,9 @@ export default function ProjectInProcess() {
   return (
     <>
       <div className="card my-2 col-lg-5 col-12 text-white border-light mb-4 ">
-        <h1 className="d-flex justify-content-center align-items-center mt-2">
-          en Proceso....
+        <h1 className="d-flex justify-content-center align-items-center mt-2 tituloProceso">
+          <span className="">en Proceso...</span>
+          <div className="spinner-border" role="status"></div>
         </h1>
         <div className="blurred">
           <div className="card-body d-flex flex-column flex-md-row justify-content-around align-items-center">
