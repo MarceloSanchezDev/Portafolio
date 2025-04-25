@@ -8,6 +8,7 @@ import appEstat3 from "../assets/EstadisticasBaloncesto-statInfo.png";
 import appTODO1 from "../assets/TO-DOAPP1.png";
 import appTODO2 from "../assets/TO-DOAPP2.png";
 import appTODO3 from "../assets/TO-DOAPP3.png";
+import ProjectInProcess from "./ProjectInProcess";
 export function Projects() {
   return (
     <div className="container-fluid projectos text-white text-center d-flex align-items-center justify-content-around flex-column">
@@ -58,6 +59,21 @@ export function Projects() {
             { nombre: "MySQL", uso: "Base de Datos" },
           ]}
         ></Project>
+        <ProjectInProcess
+          id={"todoList"}
+          titulo="TO-DO List 📋✔️"
+          img={[appTODO1, appTODO2, appTODO3]}
+          descript={
+            "TO-DO APP es una aplicación simple y funcional desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La aplicación está dividida en dos secciones principales: tareas pendientes y tareas completadas. Su objetivo es ayudar al usuario a organizarse mejor, registrar actividades por hacer y marcar como completadas aquellas que ya han sido realizadas."
+          }
+          url="https://todolistmarcelosanchezdev.vercel.app/"
+          tec={[
+            { nombre: "React.js", uso: "Front-End" },
+            { nombre: "Bootstrap", uso: "Front-End" },
+            { nombre: "Node.js", uso: "Back-End" },
+            { nombre: "MySQL", uso: "Base de Datos" },
+          ]}
+        ></ProjectInProcess>
       </div>
     </div>
   );
