@@ -81,4 +81,4 @@ export function Project({ titulo, img, descript, url, tec, id }) {
     </div>
   );
 }
-//<p></p>
+
