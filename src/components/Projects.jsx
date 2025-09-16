@@ -12,14 +12,14 @@ import ProjectInProcess from "./ProjectInProcess";
 export function Projects() {
   return (
     <div className="container-fluid projectos text-white text-center d-flex align-items-center justify-content-around flex-column">
-      <h1 className="fs-1">🌐 Projectos</h1>
+      <h1 className="fs-1 my-5">🌐 Projectos</h1>
       <div className="row text-start d-flex flex-md-column flex-lg-row align-items-center justify-content-around w-100">
         <Project
           id={"appMovie"}
           titulo="App Web  de Peliculas 🍿🎬 "
           img={[appPeliculas2, appPeliculas3, appPeliculas4]}
           descript={
-            "Aplicación web para explorar, buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener información detallada de cada película y permite a los usuarios agregar títulos a su lista personal. Cuenta con autenticación mediante JWT y cifrado de contraseñas con Bcrypt. El backend está desarrollado con Node.js y Express, y la base de datos en MySQL. La validación de datos se realiza con Zod. El frontend está construido con React y estilizado con Bootstrap, ofreciendo una experiencia de usuario intuitiva y responsiva."
+            "Buscar y gestionar películas favoritas. Utiliza la API de TMDb para obtener información detallada de cada película y permite a los usuarios agregar títulos a su lista personal. Cuenta con autenticación mediante JWT y cifrado de contraseñas con Bcrypt. El backend está desarrollado con Node.js y Express, y la base de datos en MySQL. La validación de datos se realiza con Zod. El frontend está construido con React y estilizado con Bootstrap, ofreciendo una experiencia de usuario intuitiva y responsiva."
           }
           url="https://peliculas-murex.vercel.app/"
           tec={[
@@ -34,7 +34,7 @@ export function Projects() {
           titulo="App Web de Estadisticas 📊📈"
           img={[appEstat1, appEstat2, appEstat3]}
           descript={
-            "Aplicación web para visualizar estadísticas de baloncesto, enfocada en tiros de dos y tres puntos. Permite analizar el rendimiento de los jugadores en distintos partidos, mostrando aciertos y fallos detallados. Usa React en el frontend con Bootstrap para una interfaz dinámica y adaptable. El backend está desarrollado con Node.js y Express, gestionando la lógica del negocio y la autenticación con JWT. Protege contraseñas con Bcrypt y almacena datos en MySQL. La validación de la información se realiza con Zod, asegurando integridad y consistencia en los datos registrados."
+            "Enfocada en tiros de dos y tres puntos. Permite analizar el rendimiento de los jugadores en distintos partidos, mostrando aciertos y fallos detallados. Usa React en el frontend con Bootstrap para una interfaz dinámica y adaptable. El backend está desarrollado con Node.js y Express, gestionando la lógica del negocio y la autenticación con JWT. Protege contraseñas con Bcrypt y almacena datos en MySQL. La validación de la información se realiza con Zod, asegurando integridad y consistencia en los datos registrados."
           }
           url="https://estadisticas-baloncesto-app.vercel.app/"
           tec={[
