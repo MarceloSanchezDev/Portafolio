@@ -47,7 +47,6 @@ export function Project({ titulo, img, descript, url, tec, id }) {
         </div>
       </div>
       <div className="card-body">
-        <h2>Decripcion de la Aplicacion</h2>
         <p className="card-text">{descript}</p>
         <div>
           <div
@@ -81,4 +80,3 @@ export function Project({ titulo, img, descript, url, tec, id }) {
     </div>
   );
 }
-
