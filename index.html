@@ -1,19 +1,88 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="./src/assets/braces.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcelo Sanchez</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO básico -->
+  <title>Marcelo Sánchez — Full Stack Developer</title>
+  <meta name="description"
+    content="Portafolio de Marcelo Sánchez. Desarrollo de aplicaciones web con React, Node.js, MySQL y Firebase, enfocadas en seguridad, UX y performance." />
+  <link rel="canonical" href="https://marcelosanchezdev.com.ar/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marcelo Sánchez — Full Stack Developer" />
+  <meta property="og:description" content="Apps rápidas y seguras con React/Node y Firebase orientadas a negocio." />
+  <meta property="og:url" content="https://marcelosanchezdev.com.ar/" />
+  <meta property="og:image" content="https://marcelosanchezdev.com.ar/LlavesMatematicas.png" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marcelo Sánchez — Full Stack Developer" />
+  <meta name="twitter:description" content="Apps rápidas y seguras con React/Node y Firebase orientadas a negocio." />
+  <meta name="twitter:image" content="https://marcelosanchezdev.com.ar/LlavesMatematicas.png" />
+
+  <!-- Apariencia / PWA -->
+  <meta name="theme-color" content="#0e172c" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Iconos -->
+  <link rel="icon" type="image/svg+xml" href="/braces.svg" />
+  <link rel="icon" href="/braces.svg" sizes="any" />
+  <link rel="apple-touch-icon" href="/braces.svg" />
+
+  <!-- Fuentes (optimizado) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Montserrat, Poppins y VT323 en una sola hoja; con display=swap -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=VT323&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Datos estructurados (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marcelo Sánchez",
+      "jobTitle": "Full Stack Developer",
+      "url": "https://marcelosanchezdev.com.ar/",
+      "sameAs": [
+        "https://www.linkedin.com/in/lucas-santiago-herrera-nieto/",
+        "https://github.com/MarceloSanchezDev"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <a class="visually-hidden-focusable position-absolute start-0 top-0 m-2 p-2 bg-dark text-white rounded"
+    href="#root">Saltar al contenido</a>
+
+  <div id="root"></div>
+
+  <noscript>
+    <div class="container py-4">
+      <p>Para ver este sitio correctamente, habilitá JavaScript.</p>
+    </div>
+  </noscript>
+
+  <!-- Bootstrap JS (defer para no bloquear) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+
+  <!-- Tu app -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

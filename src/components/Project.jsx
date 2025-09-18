@@ -1,9 +1,13 @@
 export function Project({ titulo, img, descript, url, tec, id }) {
   return (
-    <div className="card my-2 col-lg-5 col-12 text-white border-light mb-4">
+    <div className="card my-2 col-lg-5 col-12 text-white border-light mb-4 cartaProject">
       <div className="card-body d-flex flex-column flex-md-row justify-content-around align-items-center">
         <h1 className="card-title fs-3 text-start">{titulo}</h1>
-        <a className="btn btn-primary d-inline-block" href={url}>
+        <a
+          className="btn btn-primary d-inline-block"
+          target="_blank"
+          href={url}
+        >
           Ver projecto 🔗
         </a>
       </div>
