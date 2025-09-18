@@ -8,6 +8,12 @@ import appEstat3 from "../assets/EstadisticasBaloncesto-statInfo.png";
 import appTODO1 from "../assets/TO-DOAPP1.png";
 import appTODO2 from "../assets/TO-DOAPP2.png";
 import appTODO3 from "../assets/TO-DOAPP3.png";
+import FarmaciaFiorilliJR1 from "../assets/FarmaciaFiorilliJR1.png";
+import FarmaciaFiorilliJR2 from "../assets/FarmaciaFiorilliJR2.png";
+import FarmaciaFiorilliJR3 from "../assets/FarmaciaFiorilliJR3.png";
+import FarmaciaFiorilliJR4 from "../assets/FarmaciaFiorilliJR4.png";
+import FarmaciaFiorilliJR5 from "../assets/FarmaciaFiorilliJR5.png";
+
 import ProjectInProcess from "./ProjectInProcess";
 export function Projects() {
   return (
@@ -57,6 +63,20 @@ export function Projects() {
             { nombre: "Bootstrap", uso: "Front-End" },
             { nombre: "Node.js", uso: "Back-End" },
             { nombre: "MySQL", uso: "Base de Datos" },
+          ]}
+        ></Project>
+        <Project
+          id={"farmacia"}
+          titulo="Farmacia Fiorilli JR 🩺💊"
+          img={[FarmaciaFiorilliJR1, FarmaciaFiorilliJR2, FarmaciaFiorilliJR3]}
+          descript={
+            "Página web responsiva para farmacia con foco en conversión local: catálogo de productos, WhatsApp con mensaje prellenado, horarios, teléfonos y Google Maps embebido. Implementé SEO local (schema.org Pharmacy, título/descripción por página, Open Graph), optimización para Core Web Vitals. Resultado: aumento de consultas y pedidos por WhatsApp  y mejor presencia en búsquedas de cercanía."
+          }
+          url="https://www.fiorillijrfarmacia.com.ar/"
+          tec={[
+            { nombre: "React.js", uso: "Front-End" },
+            { nombre: "Bootstrap", uso: "UI/Responsive" },
+            { nombre: "Vercel", uso: "Deploy" },
           ]}
         ></Project>
         <ProjectInProcess

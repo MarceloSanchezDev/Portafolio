@@ -10,8 +10,7 @@
   background-color:rgb(254, 199, 215);
   min-height: 100vh;
 }
-.footer{min-height: 100vh;
-  background-color:rgb(14, 23, 44)}
+.footer{min-height: 100vh;  background-color:rgb(14, 23, 44)}
 .card{
   background: rgba(255, 255, 255, 0.1);
 }
@@ -21,7 +20,10 @@
 ::-webkit-scrollbar{
   display: none;
 }
-
+.cartaProject{
+  min-height: 100vh;
+  min-height: 100vh;
+}
 .elementDer.visibleDer {
   transform: translateX(0) translateY(0) translateZ(0);
   animation: aparecer 1s ease-in-out forwards;
@@ -59,4 +61,28 @@
   display: none;
   
 }
+}
+
+
+/* Link para lectores de pantalla/teclado */
+.skip-link{
+  position:absolute; left:-9999px; top:12px; background:#111; color:#fff;
+  padding:8px 12px; border-radius:8px; z-index:9999; text-decoration:none;
+}
+.skip-link:focus{ left:12px; }
+
+/* Revelado base */
+.reveal{ opacity:0; transform:translateY(16px); will-change: transform, opacity; }
+.reveal[data-animate="left"]{ transform:translateX(-24px); }
+.reveal[data-animate="right"]{ transform:translateX(24px); }
+.reveal[data-animate="up"]{ transform:translateY(24px); }
+
+.is-visible{
+  opacity:1; transform:none;
+  transition: opacity .6s ease, transform .6s cubic-bezier(.21,.6,.35,1);
+}
+
+/* Respeto a usuarios con motion reducido */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .is-visible{ transition:none !important; transform:none !important; opacity:1 !important; }
 }

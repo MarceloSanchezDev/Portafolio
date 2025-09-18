@@ -1,5 +1,4 @@
 import { useState } from "react";
-import contactoEmail from "../assets/contactoEmail.jpg";
 export function Contact() {
   const [formData, setFormData] = useState({
     nombre: "",
@@ -35,7 +34,10 @@ export function Contact() {
     }
   };
   return (
-    <div className="contacto container-fluid d-flex flex-column justify-content-around align-items-center">
+    <div
+      id="contacto"
+      className="contacto container-fluid d-flex flex-column justify-content-around align-items-center"
+    >
       <h2 className="text-center fs-1">📧 Contacto</h2>
       <div className="row w-100 d-flex justify-content-around align-items-center">
         <form

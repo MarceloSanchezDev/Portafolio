@@ -10,40 +10,46 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    const elementDer = document.querySelectorAll(".elementDer");
-    const elementIzq = document.querySelectorAll(".elementIzq");
+    const targets = document.querySelectorAll("[data-animate]");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    const animarSecciones = () => {
-      elementDer.forEach((element) => {
-        const seccionTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    if (reduce) {
+      targets.forEach((el) => el.classList.add("is-visible"));
+      return;
+    }
 
-        if (seccionTop < windowHeight - 100) {
-          element.classList.add("visibleDer");
+    const io = new IntersectionObserver(
+      (entries, obs) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
         }
-      });
-      elementIzq.forEach((element) => {
-        const seccionTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+    );
 
-        if (seccionTop < windowHeight - 100) {
-          element.classList.add("visibleIzq");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", animarSecciones);
-    animarSecciones(); // Llamamos una vez para animar secciones visibles al cargar
-
-    return () => window.removeEventListener("scroll", animarSecciones);
+    targets.forEach((el) => io.observe(el));
+    return () => io.disconnect();
   }, []);
+
   return (
-    <div>
-      <Presentation />
-      <Projects />
-      <Contact />
+    <>
+      {/* Accesibilidad: saltar directo al contenido */}
+      <a href="#contenido" className="skip-link">Saltar al contenido</a>
+
+      <header>
+        <Presentation />
+      </header>
+
+      <main id="contenido">
+        <Projects />
+        <Contact />
+      </main>
+
       <Footer />
-    </div>
+    </>
   );
 }
 
