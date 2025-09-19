@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export function Project({ titulo, img, descript, url, tec, id }) {
+  const [show, setShow] = useState(false);
   return (
     <div className="card my-2 col-lg-5 col-12 text-white border-light mb-4 cartaProject">
       <div className="card-body d-flex flex-column flex-md-row justify-content-around align-items-center">
@@ -50,8 +53,12 @@ export function Project({ titulo, img, descript, url, tec, id }) {
           </button>
         </div>
       </div>
+
       <div className="card-body">
-        <p className="card-text">{descript}</p>
+        <button className="btn btn-success" onClick={() => setShow(!show)}>
+          {!show ? "Ver Info" : "Ocultar Info"}
+        </button>
+        {show && <p className="card-text">{descript}</p>}
         <div>
           <div
             className="collapse collapse-horizontal"
